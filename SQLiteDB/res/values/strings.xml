@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SQLiteDB</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tv_nombre">Nombre</string>
+    <string name="tv_num_comp">Comprimidos</string>
+    <string name="tv_add_medicamento">Añadir Medicamento</string>
+    <string name="bt_add_medicamento">Añadir</string>
+    <string name="bt_listado">Listar Medicamentos</string>
+    <string name="tv_listado">LISTADO:</string>
+    <string name="bt_drop_close">Borrar y cerrar</string>
+
+</resources>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sergiod.sqlitedb.MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_add_medicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="5dp"
+        android:text="@string/tv_add_medicamento"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_tv_nombre_comp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/tv_nombre" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_num_comp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_num_comp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_add_medicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addMedicamento"
+        android:text="@string/bt_add_medicamento" />
+
+    <Button
+        android:id="@+id/bt_listado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:onClick="listarMedicamentos"
+        android:text="@string/bt_listado" />
+
+    <TextView
+        android:id="@+id/tv_listado"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:text="@string/tv_listado" />
+
+    <Button
+        android:id="@+id/bt_drop_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteClose"
+        android:text="@string/bt_drop_close" />
+
+</LinearLayout>
